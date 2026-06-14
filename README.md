@@ -121,7 +121,7 @@ npm test         # Run tests
 
 ## 📄 License
 
-MIT © your-username
+MIT © EBINBIJU138
 
 
 <img width="107" height="50" alt="resume" src="https://github.com/user-attachments/assets/c68a9824-bb2f-4511-a29d-55fe557fb3ee" />
