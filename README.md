@@ -1,6 +1,129 @@
 # CAR-MULTIPLAYER
 <img width="1536" height="1024" alt="background image" src="https://github.com/user-attachments/assets/28cf0a0f-a7fe-4d87-a6f9-0b745eb876dd" />
 
+
+# 🚗 Car Multiplayer
+
+A real-time multiplayer top-down car racing game controlled with **W A S D** keys.
+
+---
+
+## 🎮 Gameplay
+
+Race against other players in real time. Each player controls their own car using the keyboard. Dodge others, stay on track, and reach the finish line first.
+
+### Controls
+
+| Key | Action |
+|-----|--------|
+| `W` | Accelerate forward |
+| `S` | Brake / Reverse |
+| `A` | Steer left |
+| `D` | Steer right |
+
+---
+
+## 🕹️ Features
+
+- Real-time multiplayer via WebSockets
+- Top-down 2D car physics
+- Player name tags and car colors
+- Collision detection between cars
+- Live leaderboard / lap counter
+- Responsive canvas rendering
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) v18+
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/car-multiplayer.git
+cd car-multiplayer
+npm install
+```
+
+### Run the Server
+
+```bash
+npm start
+```
+
+Then open your browser at:
+
+```
+http://localhost:3000
+```
+
+Share that URL with friends on the same network (or deploy it) to play together.
+
+---
+
+## 🗂️ Project Structure
+
+```
+car-multiplayer/
+├── public/
+│   ├── index.html       # Game canvas and UI
+│   ├── game.js          # Client-side game loop & rendering
+│   └── style.css        # Styles
+├── server.js            # Node.js + Socket.io server
+├── package.json
+└── README.md
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | HTML5 Canvas, Vanilla JS |
+| Backend | Node.js, Express |
+| Networking | Socket.io (WebSockets) |
+
+---
+
+## 🌐 Multiplayer Architecture
+
+1. Each player connects to the server via WebSocket.
+2. The client sends keyboard input (`W`, `A`, `S`, `D`) on every frame.
+3. The server processes movement, resolves collisions, and broadcasts updated positions to all players.
+4. Each client renders all cars based on the state received from the server.
+
+---
+
+## 📦 Scripts
+
+```bash
+npm start        # Start the game server
+npm run dev      # Start with hot-reload (nodemon)
+npm test         # Run tests
+```
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repo
+2. Create a feature branch: `git checkout -b feature/my-feature`
+3. Commit your changes: `git commit -m "Add my feature"`
+4. Push to the branch: `git push origin feature/my-feature`
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+MIT © your-username
+
+
 <img width="107" height="50" alt="resume" src="https://github.com/user-attachments/assets/c68a9824-bb2f-4511-a29d-55fe557fb3ee" />
 <img width="65" height="57" alt="resume icon" src="https://github.com/user-attachments/assets/dc5e2874-9498-424f-a235-efe51d2bafd8" />
 <img width="711" height="219" alt="quit" src="https://github.com/user-attachments/assets/dd98695a-8597-46ef-a3c7-432978869f51" />
